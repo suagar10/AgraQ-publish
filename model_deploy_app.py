@@ -39,7 +39,7 @@ def model_predict(img_path, model):
 @app.route('/', methods=['GET'])
 def index():
     # Main page
-    return None
+    return jsonify({'init': 'init'})
 
 
 @app.route('/predict', methods=['GET', 'POST'])
